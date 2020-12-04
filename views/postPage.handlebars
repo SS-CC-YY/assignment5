@@ -1,0 +1,19 @@
+
+    <main class="content">
+       {{#if ifshow}}
+            {{> update}}
+        {{/if}}
+
+        <section id="posts">
+
+            {{#each posts}}
+                {{> post}}
+            {{/each}}
+
+        </section>
+
+    </main>
+    {{#if ifshow}}
+        {{> sell}}
+    {{/if}}
+
